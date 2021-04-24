@@ -1,6 +1,4 @@
-[
-  {
-    "name": "",
-    "value": ""
-  }
-]
+{
+  "Privat USD Buy Rate": "//td[@id='USD_buy']",
+  "FinanceUA USD Buy Rate": "//tbody[@class='bank_rates_usd']//a[text()='ПриватБанк']/../following-sibling::td[@class='buy_rate']/span/span"
+}

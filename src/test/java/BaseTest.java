@@ -1,16 +1,18 @@
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
 
-    @BeforeTest
-    public void beforeTest() {
-
+    @BeforeClass
+    public static void startTest()
+    {
+        ReportHelper.startReporting();
     }
 
-    @AfterMethod
-    public void endTest() {
+    @AfterClass
+    public static void endTest()
+    {
+        ReportHelper.stopReporting();
         DriverProvider.closeDriver();
     }
 }
