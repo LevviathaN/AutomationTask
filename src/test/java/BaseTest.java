@@ -13,6 +13,6 @@ public class BaseTest {
     public static void endTest()
     {
         ReportHelper.stopReporting();
-        DriverProvider.closeDriver();
+        DriverProvider.closeAllDrivers();
     }
 }
